@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:shoes_shop/controller/mainscreen_provider.dart';
 import 'package:shoes_shop/ui/cartpage.dart';
 import 'package:shoes_shop/ui/homepage.dart';
-import 'package:shoes_shop/ui/product_by_cat.dart';
 import 'package:shoes_shop/ui/profile.dart';
 import 'package:shoes_shop/ui/search.dart';
 
