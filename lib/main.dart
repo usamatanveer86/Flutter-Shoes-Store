@@ -1,11 +1,14 @@
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shoes_shop/controller/mainscreen_provider.dart';
+import 'package:shoes_shop/controller/product_provider.dart';
 import 'package:shoes_shop/ui/mainscreen.dart';
 
 void main() {
   runApp(MultiProvider(providers: [
-    ChangeNotifierProvider(create: (context) => MainScreenNotifier())
+    ChangeNotifierProvider(create: (context) => MainScreenNotifier()),
+    ChangeNotifierProvider(create: (context)=> ProductNotifier())
   ], child: const MyApp()));
 }
 

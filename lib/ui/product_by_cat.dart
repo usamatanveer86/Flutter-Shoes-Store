@@ -10,7 +10,8 @@ import 'package:shoes_shop/views/shared/latestshoes.dart';
 import '../views/shared/appstyle.dart';
 
 class ProductByCat extends StatefulWidget {
-  const ProductByCat({super.key});
+  const ProductByCat({super.key, required this.tabIndex,});
+  final int tabIndex;
 
   @override
   State<ProductByCat> createState() => _ProductByCatState();
@@ -145,7 +146,7 @@ class _ProductByCatState extends State<ProductByCat>
         barrierColor: Colors.white54,
         context: context,
         builder: (context) => Container(
-              height: MediaQuery.of(context).size.height * 0.82,
+              height: MediaQuery.of(context).size.height * 0.84,
               width: MediaQuery.of(context).size.width,
               decoration: const BoxDecoration(
                 color: Colors.white,
